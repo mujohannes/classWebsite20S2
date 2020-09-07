@@ -8,8 +8,9 @@ body {
   grid-template-columns: 150px auto 500px;
 }
 .logo {
-  max-width: 100px;
+  max-width: 80px;
   min-width: 60px;
+  padding: 15px;
 }
 .main-nav {
   grid-column-start: 3;
@@ -57,4 +58,37 @@ img {
 
 article {
   background-color: #cccccc;
+}
+
+article h3, article p {
+  padding: 0 15px;
+}
+
+article img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #588770;
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(3,30px);
+  grid-gap: 15px;
+}
+
+.social-links a {
+  color: lightyellow;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: yellow;
 }
